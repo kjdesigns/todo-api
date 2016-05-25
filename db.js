@@ -3,7 +3,11 @@ var env = process.env.NODE_ENV || "development";
 var sequelize;
 
 if(env==="production"){
+<<<<<<< HEAD
 	sequelize = new Sequelize(process.env.DATABASE_URL,{
+=======
+	sequelize = new Sequelize(process.env.DATABAE_URL,{
+>>>>>>> d4097dd1b570f84368123d67db1500492e592082
 		dialect:"postgress"
 	});
 }else{
